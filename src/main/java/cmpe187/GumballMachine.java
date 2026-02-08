@@ -2,8 +2,8 @@ package cmpe187;
 
 import java.util.Scanner;
 public class GumballMachine {
-    private final double ygb = 0.05;
-    private final double rgb = 0.1;
+    private final double ygb = 0.1;
+    private final double rgb = 0.05;
     private final double quarter = 0.25;
     private final double dime = 0.1;
     private final double nickel = 0.05;
@@ -90,7 +90,7 @@ public class GumballMachine {
         }
     }
 
-    private static void printHelp(){
+    public static boolean printHelp(){
         System.out.println("\nCommands:");
         System.out.println("  insert <nickel|dime|quarter|anything>  - insert a coin (invalid stored until dispense)");
         System.out.println("  red                                    - press RED lever (5c)");
@@ -104,6 +104,7 @@ public class GumballMachine {
         System.out.println("  red");
         System.out.println("  red");
         System.out.println("  change\n");
+        return true;
     }
 
 
